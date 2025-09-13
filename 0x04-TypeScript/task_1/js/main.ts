@@ -1,3 +1,5 @@
+//  task 1
+
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -7,28 +9,29 @@ interface Teacher {
   [key: string]: any;
 }
 
-const teacher3: Teacher = {
-  firstName: "Alx",
-  lastName: "Ethiopia",
-  fullTimeEmployee: true,
-  location: "Addis Ababa, Ethiopia",
-  contract: true,
-};
-
-console.log(teacher3);
-
-// task 2
+//  task 2
 
 interface Directors extends Teacher {
   numberOfReports: number;
 }
 
-const director1: Directors = {
-  firstName: "Elias",
-  lastName: "Belay",
-  fullTimeEmployee: false,
-  location: "Addis Ababa, Ethiopia",
-  numberOfReports: 17,
-};
+// const teacher3: Teacher = {
+//   firstName: "Alx",
+//   lastName: "Ethiopia",
+//   fullTimeEmployee: true,
+//   location: "Addis Ababa, Ethiopia",
+//   contract: true,
+// };
 
-console.log(director1);
+// console.log(teacher3);
+
+
+// const director1: Directors = {
+//   firstName: "Elias",
+//   lastName: "Belay",
+//   fullTimeEmployee: false,
+//   location: "Addis Ababa, Ethiopia",
+//   numberOfReports: 17,
+// };
+
+// console.log(director1);
