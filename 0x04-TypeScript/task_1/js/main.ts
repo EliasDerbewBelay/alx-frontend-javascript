@@ -15,4 +15,20 @@ const teacher3: Teacher = {
   contract: true,
 };
 
-console.log(teacher3)
+console.log(teacher3);
+
+// task 2
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+const director1: Directors = {
+  firstName: "Elias",
+  lastName: "Belay",
+  fullTimeEmployee: false,
+  location: "Addis Ababa, Ethiopia",
+  numberOfReports: 17,
+};
+
+console.log(director1);
