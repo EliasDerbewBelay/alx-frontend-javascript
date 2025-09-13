@@ -10,12 +10,12 @@ interface Director extends Teacher {
   numberOfReports: number;
 }
 
-// Interface for the function
+// Interface
 interface printTeacherFunction {
   ({ firstName, lastName }: { firstName: string; lastName: string }): string;
 }
 
-// Function implementation
+// Function
 function printTeacher({
   firstName,
   lastName,
@@ -23,9 +23,8 @@ function printTeacher({
   firstName: string;
   lastName: string;
 }): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
+  return `${firstName}. ${lastName}`;
 }
 
 // Example
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // J. Doe
-// Output: J. Doe
