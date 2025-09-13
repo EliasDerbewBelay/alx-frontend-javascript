@@ -1,3 +1,7 @@
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -5,10 +9,6 @@ interface Teacher {
   location: string;
   yearsOfExperience?: number;
   [key: string]: any;
-}
-
-interface Directors extends Teacher {
-  numberOfReports: number;
 }
 
 interface printTeacherFunction {
