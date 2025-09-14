@@ -29,18 +29,12 @@ function printTeacher({
 // Example
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // J. Doe
 
-// 1. Define an interface for the constructor
-interface StudentClassConstructor {
-  new (firstName: string, lastName: string): StudentClassInterface;
-}
-
-// 2. Define an interface for the class
 interface StudentClassInterface {
   workOnHomework(): string;
   displayName(): string;
 }
 
-// Implement the class with exact name and structure
+// Implement the class with matching parameter names
 class StudentClass implements StudentClassInterface {
   firstName: string;
   lastName: string;
@@ -60,6 +54,6 @@ class StudentClass implements StudentClassInterface {
 }
 
 // ✅ Example usage
-const student: StudentClassInterface = new StudentClass("John", "Doe");
-console.log(student.displayName()); // Output: John
-console.log(student.workOnHomework()); // Output: Currently working
+const student = new StudentClass("John", "Doe");
+console.log(student.displayName());
+console.log(student.workOnHomework());
