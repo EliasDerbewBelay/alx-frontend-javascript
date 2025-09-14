@@ -40,10 +40,10 @@ interface StudentClassInterface {
   displayName(): string;
 }
 
-// 3. Implement the class
+// Implement the class with exact name and structure
 class StudentClass implements StudentClassInterface {
-  private firstName: string;
-  private lastName: string;
+  firstName: string;
+  lastName: string;
 
   constructor(firstName: string, lastName: string) {
     this.firstName = firstName;
