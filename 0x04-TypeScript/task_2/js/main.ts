@@ -56,3 +56,19 @@ function createEmployee(salary: number): Director | Teacher {
 console.log(createEmployee(200)); // Teacher
 console.log(createEmployee(1000)); // Director
 console.log(createEmployee(500)); // Director
+
+// String literal type
+export type Subjects = "Math" | "History";
+
+// teachClass function
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
+  }
+}
+
+// ✅ Expected results
+console.log(teachClass("Math")); // Teaching Math
+console.log(teachClass("History")); // Teaching History
