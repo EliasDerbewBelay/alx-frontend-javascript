@@ -1,23 +1,19 @@
 /// <reference path="./crud.d.ts" />
 
-import { RowID, RowElement } from "./interface";
+import { RowID, RowElement } from "../interface";
 import * as CRUD from "./crud";
 
-// Create an object of type RowElement
+// Original row object
 const row: RowElement = {
   firstName: "Guillaume",
   lastName: "Salva",
 };
 
-// Insert row and store new ID
+// Insert row
 const newRowID: RowID = CRUD.insertRow(row);
 
-// Create updated row with age
-const updatedRow: RowElement = {
-  firstName: "Guillaume",
-  lastName: "Salva",
-  age: 23,
-};
+// Updated row using object spread
+const updatedRow: RowElement = { ...row, age: 23 };
 
 // Update row
 CRUD.updateRow(newRowID, updatedRow);
