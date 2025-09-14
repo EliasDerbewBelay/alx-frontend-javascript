@@ -29,13 +29,7 @@ function printTeacher({
 // Example
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // J. Doe
 
-interface StudentClassInterface {
-  workOnHomework(): string;
-  displayName(): string;
-}
-
-// Implement the class with matching parameter names
-class StudentClass implements StudentClassInterface {
+class StudentClass {
   firstName: string;
   lastName: string;
 
@@ -53,7 +47,3 @@ class StudentClass implements StudentClassInterface {
   }
 }
 
-// ✅ Example usage
-const student = new StudentClass("John", "Doe");
-console.log(student.displayName());
-console.log(student.workOnHomework());
