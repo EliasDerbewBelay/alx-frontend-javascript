@@ -64,9 +64,8 @@ export type Subjects = "Math" | "History";
 export function teachClass(todayClass: Subjects): string {
   if (todayClass === "Math") {
     return "Teaching Math";
-  } else {
-    return "Teaching History";
   }
+  return "Teaching History";
 }
 
 // ✅ Expected results
